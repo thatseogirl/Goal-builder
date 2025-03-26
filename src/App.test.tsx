@@ -55,7 +55,6 @@ describe("App", () => {
   });
 
   it("adds a new goal when form is submitted", () => {
-    const store = renderApp();
 
     fireEvent.change(screen.getByLabelText(/your goal/i), {
       target: { value: "Test Jest" },

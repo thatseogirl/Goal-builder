@@ -2,8 +2,6 @@ import { FormEvent } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addGoal } from "../store/goals/goalsSlice";
 import {
-  updateGoal,
-  updateSummary,
   resetForm,
 } from "../store/form/formSlice";
 import { RootState } from "../store/store";
