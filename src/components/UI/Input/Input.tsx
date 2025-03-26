@@ -1,9 +1,10 @@
-import React from 'react'
+import { InputProps } from "./inputType"
 
-const Input = () => {
+const Input = ({label, id, ...props}: InputProps) => {
   return (
-    <div>
-      
+    <div className="flex-item">
+      <label htmlFor={id}>{label}</label>
+      <input  id={id} {...props}/>
     </div>
   )
 }

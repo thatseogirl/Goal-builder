@@ -1,4 +1,3 @@
-
 import InfoText from "./InfoText";
 
 type goalCountProp = {
@@ -6,7 +5,6 @@ type goalCountProp = {
 };
 
 const GoalInfo = ({ goalCount }: goalCountProp) => {
-  console.log(goalCount);
   if (goalCount === 0) {
     return (
       <InfoText mode="hint">

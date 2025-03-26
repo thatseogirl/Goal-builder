@@ -1,11 +1,11 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-interface FormState {
+export interface FormStateProp {
   goal: string;
   summary: string;
 }
 
-const initialState: FormState = {
+const initialState: FormStateProp = {
   goal: "",
   summary: "",
 };
@@ -14,10 +14,10 @@ const formSlice = createSlice({
   name: "form",
   initialState,
   reducers: {
-    updateGoal: (state: FormState, action: PayloadAction<string>) => {
+    updateGoal: (state: FormStateProp, action: PayloadAction<string>) => {
       state.goal = action.payload;
     },
-    updateSummary: (state: FormState, action: PayloadAction<string>) => {
+    updateSummary: (state: FormStateProp, action: PayloadAction<string>) => {
       state.summary = action.payload;
     },
     resetForm: () => initialState,

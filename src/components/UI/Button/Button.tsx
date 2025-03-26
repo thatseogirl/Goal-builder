@@ -1,8 +1,10 @@
 
-const Button = () => {
+import { ButtonProps } from "./ButtonType"
+
+const Button = ({children, ...props}: ButtonProps) => {
   return (
-    <button>
-      
+    <button {...props}>
+      {children}
     </button>
   )
 }

@@ -6,7 +6,7 @@ export interface Goal {
   description: string;
 }
 
-interface GoalsState {
+export interface GoalsState {
   goals: Goal[];
 }
 

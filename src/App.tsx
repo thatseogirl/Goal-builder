@@ -3,7 +3,7 @@ import Header from "./components/Header/Header";
 
 import studyImg from "./assets/images/study.webp";
 import AddNewGoal from "./components/NewGoal/AddNewGoal";
-import CourseGoalListItem from "./components/CourseGoal/CourseGoalListItem";
+import CourseGoalList from "./components/CourseGoal/CourseGoalList";
 
 const App = () => {
   
@@ -14,7 +14,7 @@ const App = () => {
       </Header>
       <section className="goal-container">
       <AddNewGoal />
-      <CourseGoalListItem />
+      <CourseGoalList />
       </section>
     </main>
   );
