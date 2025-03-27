@@ -1,9 +1,9 @@
 
-import Header from "./components/Header/Header";
+import Header from "@/components/Header/Header";
 
 import studyImg from "./assets/images/study.webp";
-import AddNewGoal from "./components/NewGoal/AddNewGoal";
-import CourseGoalList from "./components/CourseGoal/CourseGoalList";
+import AddNewGoal from "@/components/NewGoal/AddNewGoal";
+import CourseGoalList from "@/components/CourseGoal/CourseGoalList";
 
 const App = () => {
   

@@ -21,10 +21,15 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
+    "baseUrl": ".",
     "paths": {
-      "@components/*": ["./src/components/*"]
+      "@/*": ["src/*"],  
+      "@components/*": ["src/components/*"],
+      "@hooks/*":  ["src/hooks/*"],
+      "@store/*":  ["src/store/*"],
+      "@style/*":  ["src/style/*"]
     }
   },
-  "include": ["src"],
+  "include": ["src"], //i have inclused it here 
   "references": [{ "path": "./tsconfig.node.json" }]
 }

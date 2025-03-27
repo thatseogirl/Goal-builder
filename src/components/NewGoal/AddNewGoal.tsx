@@ -1,5 +1,5 @@
-import { updateGoal, updateSummary } from "../../store/form/formSlice";
-import useAddNewGoal from "../../hooks/useAddNewGoal";
+import { updateGoal, updateSummary } from "@/store/form/formSlice";
+import useAddNewGoal from "@/hooks/useAddNewGoal";
 
 import Input from "../UI/Input/Input";
 import Button from "../UI/Button/Button";

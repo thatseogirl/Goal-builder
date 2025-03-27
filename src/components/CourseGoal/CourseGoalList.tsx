@@ -1,16 +1,16 @@
 import { useDispatch, useSelector } from "react-redux";
 import { memo } from "react";
-import { RootState } from "../../store/store";
+import type { RootState, AppDispatch } from "@/store/store";
 
 import CourseGoal from "./CourseGoal";
 import GoalInfo from "../Info/GoalInfo";
-import { deleteGoal } from "../../store/goals/goalsSlice";
+import { deleteGoal } from "@/store/goals/goalsSlice";
+
+const MemorizedGoal = memo(CourseGoal);
 
 const CourseGoalListItem = () => {
-  const dispatch = useDispatch();
+  const dispatch = useDispatch<AppDispatch>();
   const goals = useSelector((state: RootState) => state.goals.goals);
-
-  const MemorizedGoal = memo(CourseGoal);
 
   return (
     <div>

@@ -2,8 +2,8 @@ import { render, screen } from "@testing-library/react";
 import { Provider } from "react-redux";
 import { configureStore } from "@reduxjs/toolkit";
 import CourseGoalListItem from "./CourseGoalList";
-import goalsReducer from "../../store/goals/goalsSlice";
-import formReducer from "../../store/form/formSlice";
+import goalsReducer from "@/store/goals/goalsSlice";
+import formReducer from "@/store/form/formSlice";
 
 describe("CourseGoalListItem", () => {
   const preloadedState = {
