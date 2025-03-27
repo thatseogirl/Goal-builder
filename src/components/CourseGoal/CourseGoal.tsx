@@ -9,7 +9,7 @@ const CourseGoal = ({ title, id, onDelete, children }: CourseGoalProp) => {
         {children}
       </div>
       <Button onClick={() => onDelete(id)} aria-label="delete">
-        Delete
+        X
       </Button>
     </article>
   );

@@ -46,6 +46,9 @@ header h1 {
 }
 
 .goal-container{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
   padding: 2rem;
 }
 
@@ -93,6 +96,7 @@ form button:hover {
   flex-direction: column;
   gap: 0.5em;
 }
+
 ul {
   list-style: none;
   margin: 0;
@@ -128,7 +132,7 @@ li p {
 }
 
 li button {
-  font: inherit;
+  font-size: 2rem;
   padding: 0 0.5rem;
   background: transparent;
   border: none;
