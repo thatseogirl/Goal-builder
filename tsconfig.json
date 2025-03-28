@@ -30,6 +30,7 @@
       "@style/*":  ["src/style/*"]
     }
   },
-  "include": ["src"], //i have inclused it here 
+  "include": ["src"], 
   "references": [{ "path": "./tsconfig.node.json" }]
+
 }
